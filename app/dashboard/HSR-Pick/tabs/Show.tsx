@@ -23,16 +23,23 @@ export const Show = () => {
   return (
     <div>
       <p>
-        Url pour la source OBS : https://streamtools.shalltear.fr/view/{uid}
-        /hsrPick
+        Url pour la source OBS :{" "}
+        <a
+          className="font-medium hover:underline hover:text-blue-500 hover:font-bold"
+          href={`https://streamtools.shalltear.fr/view/${uid}/hsrPick`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          https://streamtools.shalltear.fr/view/{uid}/hsrPick
+        </a>
       </p>
       <p>Hauteur minimale : 330px</p>
       <p>Nombre maximale de personnages : 25</p>
-      <iframe
+      {/* <iframe
         src={`http://localhost:3000/view/${uid}/hsrPick`}
         width="100%"
         height="330px"
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 };
