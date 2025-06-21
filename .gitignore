@@ -8,6 +8,11 @@
 .env
 .hintrc
 .vscode
+.yarn/
+Makefile
+ecosystem.config.cjs
+package-lock.json
+yarn.lock
 
 # testing
 /coverage
